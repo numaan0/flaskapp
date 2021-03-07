@@ -4,10 +4,9 @@ import os
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
-conn = mysql.connector.connect(host="localhost", user="root", password="", database="client")
+conn = mysql.connector.connect(host="remotemysql.com", user="KaxoAuctV0", password="uRcFOZabmM", database="KaxoAuctV0")
 cursor = conn.cursor()
 
-x=0
 
 @app.route('/')
 def login():
